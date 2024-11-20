@@ -1,3 +1,6 @@
+"""""
+
+
 #Variables in python not typed
 idade = 34
 nome = "Rodrigo"
@@ -43,3 +46,31 @@ print( "teste" == "teste")
 print( "Rodrigo" == "rodrigo")
 
 print ( 15!= 2)
+
+"""
+
+
+#Day 2 Training 
+
+nome = "Rodrigo Pales"
+idade = 34
+altura = 1.73
+estudante = False
+
+print("Nome:",nome)
+print("Idade:",idade)
+print("Altura",altura)
+
+
+
+if estudante == True:
+    print("Você é estudante.")
+else: print("Você não é estudante.")
+
+#Concatenation and transform String
+frase = "Olá "+nome+" sua idade é:"+str(idade)+" sua altura é "+str(altura)+" e você é estudante? "+str(estudante)
+print(frase)
+
+#Concatenation modern
+frase2 = f"Olá {nome} sua idade é: {idade} sua altura é {altura} e vocé estudante? {estudante}" 
+print(frase2)
