@@ -49,7 +49,7 @@ print ( 15!= 2)
 
 """
 
-
+"""
 #Day 2 Training 
 
 nome = "Rodrigo Pales"
@@ -74,3 +74,41 @@ print(frase)
 #Concatenation modern
 frase2 = f"Olá {nome} sua idade é: {idade} sua altura é {altura} e vocé estudante? {estudante}" 
 print(frase2)
+
+#Simple Calculator
+print("Digite dois numeros para o programa realizar operações simples da matemática: Soma , Subtração, Multiplicação e Divisão")
+num1 = float(input("Digite o primeiro numero:"))
+num2 = float(input("Digite o segundo numero:"))
+
+
+soma = num1 + num2
+sub = num1 - num2
+mult = num1 * num2
+div = num1 / num2
+
+print("Soma",soma)
+print("Subtração",sub)
+print("Multiplicação",mult)
+print("Divisão",div)
+
+"""
+
+#Fahrenheite converter to celsius
+print("Escolha como quer converter a sua temperatura:")
+
+while True:
+    opcao = int(input("Escolha uma opção:\n1. Fahrenheit para Celsius\n2. Celsius para Fahrenheit\n3. Sair\n"))
+
+    if opcao == 1:
+        temp = float(input("Digite sua temperatura em Fahrenheit: "))
+        resultado = (temp - 32) * 5/9
+        print(f"Sua temperatura em Celsius é: {resultado:.2f}°C")
+    elif opcao == 2:
+        temp = float(input("Digite sua temperatura em Celsius: "))
+        resultado = (temp * 9/5) + 32
+        print(f"Sua temperatura em Fahrenheit é: {resultado:.2f}°F")
+    elif opcao == 3:
+        break
+    else:
+        print("Opção inválida. Tente novamente.")
+        
