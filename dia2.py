@@ -112,3 +112,15 @@ while True:
     else:
         print("Opção inválida. Tente novamente.")
         
+#Calc to area Circle
+raio = float(input("Digite o raio do cirulo:"))
+pi = 3.14159
+area = pi * raio ** 2
+print("A área do círculo é:",area)
+
+
+
+
+
+
+
