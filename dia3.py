@@ -69,3 +69,25 @@ qte_pessoas = 3
 conta_rateada = conta / qte_pessoas
 
 print(f"Cada pessoa tem que pagar R$ {conta_rateada:.2f}")
+
+#desafio crie um programa que verifica se uma pessoa pode assitir a um filme classificado como "maiores de 16 anos"
+idade = int(input("Digite a sua idade"))
+
+pode_assistir = idade>=16
+print("Pode assistir o filme?",pode_assistir)
+
+#calculo imc
+
+altura = float(input("Digite sua altura: "))
+peso = float(input("Digite seu peso: "))
+
+imc = (peso / (altura ** 2))
+
+peso_ideal = (imc >= 18.5) and (imc <= 24.9)
+peso_acima = imc > 24.9
+peso_abaixo = imc < 18.5
+
+print(f"Seu IMC é {imc:.2f}")
+print("Vocé está no peso ideal?",peso_ideal)
+print("Vocé está acima do peso?",peso_acima)
+print("Vocé está abaixo do peso?",peso_abaixo)
