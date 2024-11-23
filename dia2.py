@@ -116,7 +116,7 @@ while True:
 raio = float(input("Digite o raio do cirulo:"))
 pi = 3.14159
 area = pi * raio ** 2
-print("A área do círculo é:",area)
+print("A área do círculo",area)
 
 
 
