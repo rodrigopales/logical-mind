@@ -1,3 +1,5 @@
+"""""
+
 #operadores aritméticos
 a = 5
 b = 2
@@ -91,3 +93,17 @@ print(f"Seu IMC é {imc:.2f}")
 print("Vocé está no peso ideal?",peso_ideal)
 print("Vocé está acima do peso?",peso_acima)
 print("Vocé está abaixo do peso?",peso_abaixo)
+
+
+#Para ser aprovado em um exame, um estudante precisa ter uma nota média maior ou igual
+#a 7.0 e uma frequência maior ou igual a 75%.
+nota = 8.5
+frequencia = 80
+resultado = (nota >=7.0) and ( frequencia >= 75)
+print("Você passou de ano? ",resultado)
+
+"""
+
+#Uma loja oferece um desconto se o cliente comprar mais de 10 itens ou se o valor total da
+#compra for superior a R$100.
+
