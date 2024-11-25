@@ -107,3 +107,34 @@ print("Você passou de ano? ",resultado)
 #Uma loja oferece um desconto se o cliente comprar mais de 10 itens ou se o valor total da
 #compra for superior a R$100.
 
+qte_itens = 11
+valor_compra = 1110
+
+desconto = (qte_itens > 10) or (valor_compra > 100)
+print("Tenho direito a desconto? ",desconto)
+
+#Para acessar uma área restrita, o usuário deve inserir a senha correta e não pode estar
+#bloqueado.
+
+senhaInserida = "123456"
+senhaCorreta = "123456"
+usuarioBloqueado = False
+
+acesso = (senhaInserida == senhaCorreta) and not usuarioBloqueado 
+print("Acesso concedido",acesso)
+
+#Três amigos vão dividir igualmente uma conta de R$150. Verifique quanto cada um deve
+#pagar e se a divisão é exata (sem centavos restantes).
+conta = 150
+amigos = 3
+valorPessoa = conta / amigos
+divisaoExata = (conta % amigos) == 0
+print("Valor para cada é: R$ ",valorPessoa)
+print("A divisão é exata? ",divisaoExata)
+
+
+#Descubra se o numero digitado é par
+numero = int(input("Digite um numero para que o sistema descubra se é inpar ou par: "))
+parInpar = (numero % 2) == 0
+print("Seu numero é par? ",parInpar)
+
