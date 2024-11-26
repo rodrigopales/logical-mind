@@ -1,4 +1,3 @@
-"""""
 
 #operadores aritméticos
 a = 5
@@ -102,7 +101,7 @@ frequencia = 80
 resultado = (nota >=7.0) and ( frequencia >= 75)
 print("Você passou de ano? ",resultado)
 
-"""
+
 
 #Uma loja oferece um desconto se o cliente comprar mais de 10 itens ou se o valor total da
 #compra for superior a R$100.
