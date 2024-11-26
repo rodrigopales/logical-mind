@@ -87,7 +87,6 @@ else:
 
 #Fim classificao idade
 
-"""""
 
 #Ano bissexto sim ou não?
 ano = int(input("Digite um ano para saber se é bissexto: "))
@@ -106,3 +105,57 @@ else:
 
 
 #Fim ano bissexto
+
+
+"""""
+
+# Crie um programa que simula um caixa eletrônico. O usuário deve informar o valor do saque
+# (apenas valores inteiros) e o programa deve informar quantas cédulas de cada valor serão
+# fornecidas.
+# Considere cédulas de R$100, R$50, R$20, R$10, R$5 e R$2
+
+
+valorSaque = int(input("Digite um valor que deseja sacar apenas valores inteiros: R$"))
+
+if (valorSaque <=0):
+    print("Valor inválido")
+
+else:
+    cedulas100 = valorSaque // 100
+    valorSaque %= 100
+
+    cedulas50 = valorSaque // 50
+    valorSaque %= 50
+
+    cedulas20 = valorSaque // 20
+    valorSaque %= 20
+
+    cedulas10 = valorSaque // 10
+    valorSaque %= 10
+
+    cedulas5 = valorSaque // 5
+    valorSaque %= 5
+
+    cedulas2 = valorSaque // 2
+    valorSaque %= 2
+
+    if valorSaque != 0:
+        print("Não é possível sacar o valor especificado com as cédulas disponíveis.")
+
+    else:
+        print("Cédulas entregues:")
+        if cedulas100 >0:
+         print(f"{cedulas100} x R$ 100")
+        if cedulas50 >0:
+         print(f"{cedulas50} x R$ 50")
+        if cedulas20 >0:
+         print(f"{cedulas20} x R$ 20")
+        if cedulas10 >0:
+         print(f"{cedulas10} x R$ 10")
+        if cedulas5 >0:
+         print(f"{cedulas5} x R$ 5")
+        if cedulas2 >0:
+         print(f"{cedulas2} x R$ 2")
+        
+
+    
