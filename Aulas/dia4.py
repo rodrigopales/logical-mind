@@ -107,7 +107,6 @@ else:
 #Fim ano bissexto
 
 
-"""""
 
 # Crie um programa que simula um caixa eletrônico. O usuário deve informar o valor do saque
 # (apenas valores inteiros) e o programa deve informar quantas cédulas de cada valor serão
@@ -158,4 +157,22 @@ else:
          print(f"{cedulas2} x R$ 2")
         
 
-    
+
+"""""
+
+#Crie um programa para uma instituição que analisa o pedido de empréstimo.
+#O cliente deve informar o valor do empréstimo, a renda mensal e o número de parcelas.
+#O empréstimo será aprovado se o valor da parcela não exceder 30% da renda mensal.
+
+valorEmprestimo = float(input("Qual o valor do empréstimo que deseja: R$ "))
+rendaCliente = float(input("Digitite sua renda mensal: R$  "))
+qteParcela = int(input("Quantidade parcelas empréstimo:"))
+
+valorParcela = valorEmprestimo / qteParcela
+criterioEmprestimo = rendaCliente * 0.30
+
+
+if(valorParcela <= criterioEmprestimo):
+    print(f"Empréstimo aprovado pode seguir com a papelada , suas parcelas seram de R$ {valorParcela}")
+else:
+    print("O valor da sua parcela excede 30% da sua renda , empréstimo reprovado")
