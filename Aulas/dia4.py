@@ -1,3 +1,5 @@
+import random
+
 """""
 
 #Verifica desconto
@@ -158,7 +160,7 @@ else:
         
 
 
-"""""
+
 
 #Crie um programa para uma instituição que analisa o pedido de empréstimo.
 #O cliente deve informar o valor do empréstimo, a renda mensal e o número de parcelas.
@@ -176,3 +178,17 @@ if(valorParcela <= criterioEmprestimo):
     print(f"Empréstimo aprovado pode seguir com a papelada , suas parcelas seram de R$ {valorParcela}")
 else:
     print("O valor da sua parcela excede 30% da sua renda , empréstimo reprovado")
+
+"""""
+# Crieum programa que simulao jogo"Pedra,PapelouTesoura"entre o usuário e o computador
+opcoes = ["pedra" ,  "papel", "tesoura"]
+
+usuario = input("Escolha pedra, papel ou tesoura: ").lower()
+computador =  random.choice(opcoes)
+
+print(f"Você escolheu: {usuario}")
+print(f"O Cumputador escolheu: {computador}")
+
+if usuario == computador:
+    print("Empate")
+elif 
