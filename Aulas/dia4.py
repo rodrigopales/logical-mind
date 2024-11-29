@@ -1,4 +1,3 @@
-import random
 
 """""
 
@@ -178,17 +177,16 @@ if(valorParcela <= criterioEmprestimo):
     print(f"Empréstimo aprovado pode seguir com a papelada , suas parcelas seram de R$ {valorParcela}")
 else:
     print("O valor da sua parcela excede 30% da sua renda , empréstimo reprovado")
-
 """""
-# Crieum programa que simulao jogo"Pedra,PapelouTesoura"entre o usuário e o computador
-opcoes = ["pedra" ,  "papel", "tesoura"]
 
-usuario = input("Escolha pedra, papel ou tesoura: ").lower()
-computador =  random.choice(opcoes)
 
-print(f"Você escolheu: {usuario}")
-print(f"O Cumputador escolheu: {computador}")
+# Crie um programa que calcula o valor total da corrida com base na distância percorrida
 
-if usuario == computador:
-    print("Empate")
-elif 
+
+kmRodado = int(input("Digite quantos Km deu a corrida de Taxi: "))
+tarifaBasica = 4.00
+tarifaKm = 0.25
+valorCorrida = tarifaBasica + (tarifaKm * kmRodado)
+
+print(f"Sua corrida deu um total de R$ {valorCorrida:.2f}\n Valor tarifa basica: R$ {tarifaBasica:.2f} \
+      \n Valor por Tarifa Km Rodado: R$ {tarifaKm:.2f} \n Valor somente os km rodado: R$ {tarifaKm * kmRodado:.2f}")
