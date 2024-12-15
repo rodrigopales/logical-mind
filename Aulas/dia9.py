@@ -71,7 +71,7 @@ print(frase)
 
 # contador de vogais , usuário digita uma frase e o contador conta as vogais que existe na frase
 
-frase = input("Digite uma frase para descobrir a quantidade de vogais: ")
+frase = input("Digite uma frase para descobrir a quantidade de vogais: ").lower()
 vogais = "aeiou"
 contador = 0
 
@@ -80,3 +80,11 @@ for letra in frase:
         contador += 1
     
 print(f"A quandidade de vogais na frase {frase} é {contador} vogais!")
+
+
+# Escreva um programa que inverte a ordem das palavras em uma frase
+
+frase = input("Digite uma frase:")
+palavras = frase.split()
+fraseInvertida = " ".join(reversed(palavras))
+print(f"Segue sua frase invertida {fraseInvertida}")
