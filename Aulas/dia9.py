@@ -1,3 +1,4 @@
+"""""
 # Manipulação de Strings
 
 # Concatenação = juntar uma ou mais strings usando o operador +
@@ -85,6 +86,42 @@ print(f"A quandidade de vogais na frase {frase} é {contador} vogais!")
 # Escreva um programa que inverte a ordem das palavras em uma frase
 
 frase = input("Digite uma frase:")
-palavras = frase.split()
+palavras = frase.split()# split() Divide a string em uma lista, usando um separador
 fraseInvertida = " ".join(reversed(palavras))
 print(f"Segue sua frase invertida {fraseInvertida}")
+
+
+
+# Um palíndromo é uma palavra que é igual de trás para frente. Crie um programa que verifica
+# se uma palavra é um palíndromo ( Ex: Osso , Radar , Ana e Renner)
+
+palavra = input("Digite uma palavra para saber se ela é um Palíndromo: ").lower()
+#palavraInvertida = palavra[::-1] #forma usada invertendo apenas uma palara
+palavraInvertida = "".join(reversed(palavra)) #Forma invertendo uma String inteira
+
+print(palavraInvertida)
+
+if palavra == palavraInvertida:
+    print(f"Sua palavra {palavra} é um Palíndromo!".upper())
+else:
+    print(f"Sua palavra {palavra} não é um Palíndromo!")
+
+"""
+
+#Crie um programa que verifica se uma senha é forte. A senha deve ter pelo menos 8
+#caracteres, conter letras maiúsculas e minúsculas, números e símbolos.
+
+while True:
+    senha = input("Digite uma senha: ")
+    tem_maiuscula = any(c.isupper() for c in senha)
+    tem_minuscula = any(c.islower() for c in senha)
+    tem_numero = any(c.isdigit() for c in senha)
+    tem_simbolo = any(not c.isalnum() for c in senha)
+    tamanho_adequado = len(senha) >= 8
+
+    if tem_maiuscula and tem_minuscula and tem_numero and tem_simbolo and tamanho_adequado:
+        print("Senha forte!")
+        break
+    
+    else:
+        print("Senha fraca. Tente novamente.")
