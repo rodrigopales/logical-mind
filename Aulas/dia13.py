@@ -31,7 +31,7 @@ with open('saida.txt', 'a') as arquivo:
 # CSV - Comma Separeted Values
 import csv
 
-with open("contastos.cv", "w", newline='') as arquivo_csv:
+with open("contatos.csv", "w", newline='') as arquivo_csv:
     # cabeçalho (colunas)
     # dados
     # dados
@@ -40,6 +40,23 @@ with open("contastos.cv", "w", newline='') as arquivo_csv:
     escritor.writerow(['Rodrigo', 'Supervisor de Transporte',33])
     escritor.writerow(['Rodrigo', 'Gerente de Transporte',34])
     escritor.writerow(['Rodrigo', 'Analista de Sistemas',35])
+
+# Lendo um arquivo CSV
+
+with open("contatos.csv", "r") as arquivo:
+    leitor = csv.reader(arquivo)
+    for linha in leitor:
+        print(linha)
+
+
+# Utilizando o módulo CSV e Laços
+import csv
+
+with open('contatos.csv', 'r') as csvfile:
+    reader = csv.reader(csvfile)
+    for row in reader:
+        print(*row, sep='\t')  # Imprime cada elemento da linha separado por tabulação
+        print("-"*50)
 
 # Json - javascript object notation (APIs)
 import json
@@ -52,3 +69,9 @@ dados = {
 
 with open('dados.json', 'w') as arquivo:
     json.dump(dados,arquivo,indent=4)
+
+# Lendo Dados de um Arquivo JSON
+
+with open('dados.json', 'r') as arquivo:
+    dados = json.load(arquivo)
+    print(dados)
