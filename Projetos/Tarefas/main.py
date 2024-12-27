@@ -53,6 +53,7 @@ def adicionar_tarefa(tarefas):
     salvar_tarefas(tarefas)
     print("Tarefa adicionada com sucesso!")
 
+# Função para listar tarefas
 def listar_tarefas(tarefas):
     print("\nTarefas Pendentes:")
     tarefas_pendentes = [t for t in tarefas if not t['concluida']]
@@ -66,6 +67,26 @@ def listar_tarefas(tarefas):
     
     for tarefa in tarefas_concluidas:
         print(f"ID: {tarefa['id']}, Título: {tarefa['titulo']}, Data:{tarefa['data']}")
+
+# Função para marcar tarefa como conluida
+def concluir_tarefa(tarefas):
+    try:
+        id_tarefa = int(input("Digite o ID da tarefa a ser concluída:"))
+        for tarefa in tarefas:
+            if tarefa['id'] == id_tarefa:
+                if tarefa['concluida']:
+                    print("A tarefa já está concluída.")
+                else:
+                    tarefa['concluida'] = True
+        salvar_tarefas(tarefas)
+        print("Tarefa concluída com sucesso!")
+        return
+        print("Tarefa não encontrada.")
+    except ValueError:
+        print("ID inválido.")
+
+# Função para remover tarefa
+
 
 def menu():
     print("\n==== Gerenciador de Tarefas Avançado ====")
