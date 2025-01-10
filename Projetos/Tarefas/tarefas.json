@@ -1,12 +1,5 @@
 [
     {
-        "id": 1,
-        "titulo": "Teste",
-        "descricao": "Tarefa de teste",
-        "data": "26/12/2024",
-        "concluida": true
-    },
-    {
         "id": 2,
         "titulo": "Rodrigo",
         "descricao": "Montar plano 2025",
@@ -19,13 +12,6 @@
         "descricao": "Arrumar tambor de freio",
         "data": "26/12/2024",
         "concluida": true
-    },
-    {
-        "id": 4,
-        "titulo": "Tete 3",
-        "descricao": "adsasd",
-        "data": "26/12/2024",
-        "concluida": false
     },
     {
         "id": 5,
