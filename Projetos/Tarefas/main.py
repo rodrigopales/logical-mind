@@ -99,6 +99,18 @@ def remover_tarefa(tarefas):
     except ValueError:
         print("ID inválido.")
 
+# Pesquisar tarefa
+def pesquisar_tarefas(tarefas):
+    termo = input("Digite o termo de pesquisa: ").lower()
+    resultados = [t for t in tarefas if termo in t['titulo'].lower() or
+ termo in t['descricao'].lower()]
+    if resultados:
+        print(f"\nTarefas que contêm '{termo}':")
+        for tarefa in resultados:
+            status = "Concluída" if tarefa['concluida'] else "Pendente"
+            print(f"ID: {tarefa['id']}, Título: {tarefa['titulo']},Status: {status}, Data: {tarefa['data']}")
+    else:
+        print("Nenhuma tarefa encontrada com o termo especificado.")
 
 def menu():
     print("\n==== Gerenciador de Tarefas Avançado ====")
