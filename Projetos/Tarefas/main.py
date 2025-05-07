@@ -112,6 +112,13 @@ def pesquisar_tarefas(tarefas):
     else:
         print("Nenhuma tarefa encontrada com o termo especificado.")
 
+# Função ordenar tarefas
+def ordenar_tarefas(tarefas):
+        tarefas.sort(key=lambda x: datetime.strptime(x['data'], '%d/%m/%Y'))
+        salvar_tarefas(tarefas)
+        print("Tarefas ordenadas por data de conclusão com sucesso!")
+
+
 def menu():
     print("\n==== Gerenciador de Tarefas Avançado ====")
     print("1. Adicionar Tarefa")
